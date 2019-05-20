@@ -26,13 +26,28 @@
     <main class="container">
       <section class="filter">
         <h2 class="visually-hidden">Фильтры каталога</h2>
-        <p class="filter-title">Стоимость:</p>
-        <!-- Здесь будет форма с фильтром -->
-        <p class="filter-title">Сетка:</p>
-        <!-- Здесь будет форма с фильтром -->
-        <p class="filter-title">Особенности:</p>
-        <!-- Здесь будет форма с фильтром -->
-        <a class="filter-button">Показать</a>
+        <form action="#">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <p><label>От <input type="text" name="from" value="0"></label></p>
+            <p><label>До <input type="text" name="till" value="15000"></label></p>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <p><label><input type="radio" name="grid" value="adaptive">Адаптивная</label></p>
+            <p><label><input type="radio" name="grid" value="fixed">Фиксированная</label></p>
+            <p><label><input type="radio" name="grid" value="rubber">Резиновая</label></p>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <p><label><input type="checkbox" name="slider" checked>Слайдер</label></p>
+            <p><label><input type="checkbox" name="advantages">Блок преимуществ</label></p>
+            <p><label><input type="checkbox" name="news" checked>Новости</label></p>
+            <p><label><input type="checkbox" name="gallery">Галерея</label></p>
+            <p><label><input type="checkbox" name="cart">Корзина</label></p>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог сайтов</h2>
@@ -149,6 +164,22 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
+
+    <section class="popup">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Напишите нам:</legend>
+          <p><label for="name">Ваше имя: </label></p>
+          <p><input id="name" type="text" name="name" value="Имя Фамилия"></p>
+          <p><label for="email">Ваше e-mail: </label></p>
+          <p><input id="email" type="text" name="email" value="email@example.com"></p>
+          <p><label for="text">Текст письма: </label></p>
+          <p><input id="text" type="text" name="text" value="В свободной форме"></p>
+        </fieldset>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
 
   </body>
 </html>
