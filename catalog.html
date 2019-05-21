@@ -12,10 +12,10 @@
           <img src="img/logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
         <a class="cart-link" href="#">Корзина</a>
       </nav>
@@ -29,8 +29,8 @@
         <form action="#">
           <fieldset>
             <legend>Стоимость:</legend>
-            <p><label>От <input type="text" name="from" value="0"></label></p>
-            <p><label>До <input type="text" name="till" value="15000"></label></p>
+            <p><label>От <input type="number" name="from" value="0"></label></p>
+            <p><label>До <input type="number" name="till" value="15000"></label></p>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
@@ -153,9 +153,9 @@
       <section>
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-          <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-          <li><a class="social-button" href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li> 
+          <li><a class="social-button" href="https://vk.com"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
+          <li><a class="social-button" href="https://facebook.com"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+          <li><a class="social-button" href="https://instagram.com"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li> 
         </ul>
       </section>
       <section>
@@ -175,7 +175,7 @@
           <p><label for="email">Ваш e-mail: </label></p>
           <p><input id="email" type="text" name="email" value="email@example.com"></p>
           <p><label for="text">Текст письма: </label></p>
-          <p><input id="text" type="text" name="text" value="В свободной форме"></p>
+          <p><textarea id="text" name="text">В свободной форме</textarea></p>
         </fieldset>
         <button type="submit">Отправить</button>
       </form>
