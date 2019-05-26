@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Нёрдс»</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
   </head>
   <body>
 
@@ -25,7 +28,7 @@
 
     <main class="container">
 
-      <div>
+      <div class="slider">
         <div>
           <b>
             Долго, дорого,
@@ -69,25 +72,25 @@
           <li class="feature-item">
             <section>
               <img src="img/service-web-sites.jpg" width="300" height="146" alt="Веб-сайты">
-              <h3>Веб-сайты</h3>
+              <h3 class="feature-item-title">Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="feature-button" href="#">Заказать</a>
+              <a class="feature-button-red" href="#">Заказать</a>
             </section>
           </li>
           <li class="feature-item">
             <section>
               <img src="img/service-apps.jpg" width="300" height="146" alt="Приложения">
-              <h3>Приложения</h3>
+              <h3 class="feature-item-title">Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="feature-button" href="#">Заказать</a>
+              <a class="feature-button-green" href="#">Заказать</a>
             </section>
           </li>
           <li class="feature-item">
             <section>
               <img src="img/service-press.jpg" width="300" height="146" alt="Презентации">
-              <h3>Презентации</h3>
+              <h3 class="feature-item-title">Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="feature-button" href="#">Заказать</a>
+              <a class="feature-button-yellow" href="#">Заказать</a>
             </section>
           </li>
         </ul>
@@ -149,7 +152,7 @@
     <footer class="footer">
       <section>
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul>
+        <ul class="social-button-list">
           <li><a class="social-button" href="https://vk.com"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
           <li><a class="social-button" href="https://facebook.com"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
           <li><a class="social-button" href="https://instagram.com"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li> 
@@ -160,7 +163,7 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
 
-    <section class="popup">
+    <section class="contact-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="#">
         <p>
@@ -175,7 +178,7 @@
           <label for="text">Текст письма:</label>
           <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
         </p>
-        <button>Отправить</button>
+        <button class="button">Отправить</button>
       </form>
       <button type="button">Закрыть</button>
     </section>

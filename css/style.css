@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #000000;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #eeeeee;
+  font-weight: 500;
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.site-navigation,
+.features-list,
+.social-button-list,
+.catalog-list,
+.sort ul,
+.pagination {
+  list-style: none;
+}
+
+.site-navigation,
+.cart-link {
+  list-style: none;
+}
+
+.site-navigation a,
+.cart-link {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart-link:hover,
+.cart-link:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.cart-link:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.current {
+  border-bottom: 2px solid #fb565a;
+}
+
+.feature-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.feature-item p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.catalog-item-title {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+.catalog-item-title:hover,
+.catalog-item-title:focus {
+  color: #fb565a;
+}
+
+.catalog-item-title:active {
+  color: #c9c9c9;
+}
+
+.catalog-item-text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #666666;
+}
+
+.catalog-item-description {
+  background-color: #eeeeee;
+}
+
+/* Красная кнопка */
+.feature-button-red {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  text-align: center;
+  font-weight: 500;
+}
+
+.feature-button-red:hover,
+.feature-button-red:focus {
+  background-color: #e74246;
+}
+
+.feature-button-red:active {
+  color: #e37376;
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 #c13135;
+}
+
+/* Зеленая кнопка */
+.feature-button-green {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #00ca74;
+  text-align: center;
+  font-weight: 500;
+}
+
+.feature-button-green:hover,
+.feature-button-green:focus {
+  background-color: #00bc6c;
+}
+
+.feature-button-green:active {
+  color: #4dc491;
+  background-color: #00aa62;
+  box-shadow: inset 0 3px 0 #009958;
+}
+
+/* Желтая кнопка */
+.feature-button-yellow {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #efc84a;
+  text-align: center;
+  font-weight: 500;
+}
+
+.feature-button-yellow:hover,
+.feature-button-yellow:focus {
+  background-color: #eab534;
+}
+
+.feature-button-yellow:active {
+  color: #edc265;
+  background-color: #e5a722;
+  box-shadow: inset 0 3px 0 #ce961f;
+}
+
+/* Кнопки социальных сетей */
+.social-button {
+  background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
+
+.social-button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 #c13135;
+}
+
+/* Кнопки каталога */
+.catalog-item-button {
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  text-align: center;
+  font-weight: 500;
+}
+
+.catalog-item-button:hover,
+.catalog-item-button:focus {
+  background-color: #e74246;
+}
+
+.catalog-item-button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 #c13135;
+}
+
+/* Общие кнопки */
+.button {
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  border: none;
+  font-weight: 500;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #dfdfdf;
+}
+
+.button:active {
+  color: #959595;
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 #bfbfbf;
+}
+
+/* Кнопки пагинации */
+.pagination-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.pagination-button:hover,
+.pagination-button:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-button:active {
+  color: #a8a8a8;
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 #bfbfbf;
+}
+
+.pagination-button-current {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+
+.footer p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.footer b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.visually-hidden,
+.popup {
+  display: none;
+}
