@@ -1,8 +1,8 @@
 body {
-  margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
-  color: #000000;
   background: #ffffff;
+  color: #000000;
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
 }
 
 a {
@@ -10,12 +10,12 @@ a {
 }
 
 .navigation {
+  background-color: #eeeeee;
+  color: #000000;
   font-size: 16px;
+  font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
-  color: #000000;
-  background-color: #eeeeee;
-  font-weight: 500;
 }
 
 .logo:hover,
@@ -65,24 +65,24 @@ a {
 
 .feature-item-title {
   font-size: 24px;
+  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .feature-item p {
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
+  line-height: 24px;
 }
 
 .catalog-item-title {
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
   color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .catalog-item-title:hover,
@@ -95,11 +95,11 @@ a {
 }
 
 .catalog-item-text {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  text-align: center;
   color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
 }
 
 .catalog-item-description {
@@ -108,13 +108,13 @@ a {
 
 /* Красная кнопка */
 .feature-button-red {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
   background-color: #fb565a;
-  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .feature-button-red:hover,
@@ -123,20 +123,20 @@ a {
 }
 
 .feature-button-red:active {
-  color: #e37376;
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 #c13135;
+  color: #e37376;
 }
 
 /* Зеленая кнопка */
 .feature-button-green {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
   background-color: #00ca74;
-  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .feature-button-green:hover,
@@ -145,20 +145,20 @@ a {
 }
 
 .feature-button-green:active {
-  color: #4dc491;
   background-color: #00aa62;
   box-shadow: inset 0 3px 0 #009958;
+  color: #4dc491;
 }
 
 /* Желтая кнопка */
 .feature-button-yellow {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
   background-color: #efc84a;
-  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .feature-button-yellow:hover,
@@ -167,9 +167,9 @@ a {
 }
 
 .feature-button-yellow:active {
-  color: #edc265;
   background-color: #e5a722;
   box-shadow: inset 0 3px 0 #ce961f;
+  color: #edc265;
 }
 
 /* Кнопки социальных сетей */
@@ -185,17 +185,18 @@ a {
 .social-button:active {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 #c13135;
+  fill: #e37376;
 }
 
 /* Кнопки каталога */
 .catalog-item-button {
-  font-size: 16px;
-  line-height: 30px;
-  color: #ffffff;
-  text-transform: uppercase;
   background-color: #fb565a;
-  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .catalog-item-button:hover,
@@ -210,13 +211,13 @@ a {
 
 /* Общие кнопки */
 .button {
-  text-align: center;
-  color: #000000;
-  vertical-align: middle;
-  text-transform: uppercase;
   background-color: #eeeeee;
   border: none;
+  color: #000000;
   font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .button:hover,
@@ -225,21 +226,21 @@ a {
 }
 
 .button:active {
-  color: #959595;
   background-color: #d5d5d5;
   box-shadow: inset 0 3px 0 #bfbfbf;
+  color: #959595;
 }
 
 /* Кнопки пагинации */
 .pagination-button {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  text-align: center;
-  color: #000000;
-  vertical-align: middle;
   background-color: #eeeeee;
   border: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .pagination-button:hover,
@@ -248,32 +249,32 @@ a {
 }
 
 .pagination-button:active {
-  color: #a8a8a8;
   background-color: #d5d5d5;
   box-shadow: inset 0 3px 0 #bfbfbf;
+  color: #a8a8a8;
 }
 
 .pagination-button-current {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  text-align: center;
-  vertical-align: middle;
-  color: #000000;
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .footer p {
   font-size: 16px;
-  line-height: 22px;
   font-weight: 400;
+  line-height: 22px;
 }
 
 .footer b {
   font-size: 36px;
-  line-height: 36px;
   font-weight: 700;
+  line-height: 36px;
 }
 
 .visually-hidden,
