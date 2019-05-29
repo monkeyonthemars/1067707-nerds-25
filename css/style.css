@@ -1,0 +1,250 @@
+/* Основные */
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/* Шапка */
+.navigation {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-logo:hover,
+.site-logo:focus {
+  opacity: 0.8;
+}
+
+.site-logo:active {
+  opacity: 0.3;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: #fb565a;
+}
+
+.navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.navigation-link-current {
+  border-bottom: 2px solid #fb565a;
+}
+
+/* Подвал */
+.footer b {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.footer p {
+  line-height: 22px;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.socialnetworks a {
+  background-color: #e1e1e1;
+}
+
+.socialnetworks a:hover,
+.socialnetworks a:focus {
+  background-color: #e74246;
+}
+
+.socialnetworks a:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 #c13135;
+}
+
+/* Кнопки */
+.button {
+  background-color: #fb565a;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 #c13135;
+  color: #e37376;
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  background-color: #00aa62;
+  box-shadow: inset 0 3px 0 #009958;
+  color: #4dc491;
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  background-color: #e5a722;
+  box-shadow: inset 0 3px 0 #ce961f;
+  color: #edc265;
+}
+
+.button-gray {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.button-gray:hover,
+.button-gray:focus {
+  background-color: #dfdfdf;
+}
+
+.button-gray:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 #bfbfbf;
+  color: #959595;
+}
+
+/* Контент */
+.features h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features li {
+  list-style: none;
+}
+
+.features p {
+  line-height: 24px;
+}
+
+.sort li {
+  list-style: none;
+}
+
+.catalog-list li {
+  list-style: none;
+}
+
+.catalog-list div {
+  background-color: #eeeeee;
+}
+
+.catalog-list h3 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog-list h3:hover,
+.catalog-list h3:focus {
+  color: #fb565a;
+}
+
+.catalog-list h3:active {
+  color: #c9c9c9;
+}
+
+.catalog-list p {
+  color: #666666;
+  line-height: 18px;
+  text-align: center;
+}
+
+.catalog-list a {
+  text-decoration: none;
+}
+
+.catalog-button:hover,
+.catalog-button:focus {
+  background-color: #e74246;
+}
+
+.catalog-button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 #c13135;
+}
+
+/* Пагинация */
+.pagination-button {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.pagination-button:hover,
+.pagination-button:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-button:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 #bfbfbf;
+  color: #a8a8a8;
+}
+
+.pagination-button-current {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+  color: #000000;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
+.pagination li {
+  list-style: none;
+}
