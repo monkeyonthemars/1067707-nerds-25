@@ -1,17 +1,10 @@
 /* Сетка - Шапка */
 .main-header {
   outline:1px solid black;
-  
-  margin-bottom: 1px;
 }
 
 .navigation {
   outline:1px solid red;
-  
-  width: 1160px;
-  margin-top: 49px;
-  margin-left: 140px;
-  margin-right: 140px;
   
   display: flex;
   flex-direction: row;
@@ -29,9 +22,12 @@
 .site-navigation {
   outline:1px solid red;
   
-  width: auto;
-  margin: 0;
-  padding: 0;  
+  display: flex;
+  flex-direction: row;
+  
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .cart-link {
@@ -43,13 +39,6 @@
 /* Сетка - Контент*/
 .features {
   outline:1px solid black;
-
-  width: 1100px;
-  
-  margin-top: 80px;
-  margin-left: 140px;
-  margin-right: 200px;
-  margin-bottom: 80px;
 }
 
 .features ul {
@@ -60,23 +49,20 @@
   align-items: center;
   justify-content: space-between;
 
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .features section {
   outline:1px solid yellow;
   
   width: 300px;
-  margin: 0;
-  padding: 0;  
 }
 
 /* Сетка - Подвал */
 .footer {
   outline:1px solid black;
-  
-  margin-bottom: 1px;
 }
 
 .footer-container {
@@ -84,11 +70,6 @@
   
   width: 1160px;
   min-height: 80px;
-  
-  margin-top: 70px;
-  margin-left: 140px;
-  margin-right: 140px;
-  margin-bottom: 70px;
   
   display: flex;
   flex-direction: row;
@@ -101,14 +82,13 @@
   
   width: 360px;
   
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .footer-text {
   outline:1px solid red;
-  
-  width: auto;
 }
 
 /* Сетка - Каталог */
@@ -116,11 +96,6 @@
   outline:1px solid black;
   
   display: flex;
-  
-  width: 1160px;
-  margin: 0;
-  margin-left: 140px; 
-  margin-right: 140px;
 }
 
 .page-title {
@@ -128,19 +103,13 @@
   
   text-align: center;
   
-  width: 1160px;
-  margin-left: 140px; 
-  margin-right: 140px;
-  margin-top: 80px;
-  margin-bottom: 117px;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .catalog {
   outline:1px solid yellow;
-  
-  width: 800px; 
-  margin-left: 115px; /* 120px */
 }
 
 .catalog-list {
@@ -151,18 +120,15 @@
   display: flex;
   flex-wrap: wrap;
   
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .catalog-item {
   outline:1px solid red; 
   
   width: 360px;
-  
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 35px;
 }
 
 
