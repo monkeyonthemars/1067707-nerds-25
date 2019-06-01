@@ -68,9 +68,6 @@
 .footer-container {
   outline:1px solid red;
   
-  width: 1160px;
-  min-height: 80px;
-  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,7 +96,7 @@
 }
 
 .page-title {
-  outline:1px solid red;
+  outline:1px solid green;
   
   text-align: center;
   
