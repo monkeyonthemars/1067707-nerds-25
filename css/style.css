@@ -1,3 +1,61 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cart-link {
+  outline:1px solid red;  
+  
+  width: 110px;
+}
+
+.cart-link::before {
+  content: "";
+  
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: rgba(255,0,0,0.5); /* Временно */
+}
+
+.write-us {
+  outline:1px solid red; 
+  max-width: 760px;
+}
+
+
+.write-us-form {
+  outline:1px solid yellow; 
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.string {
+  outline:1px solid green;
+  
+  min-width: 360px;
+  
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.textbox {
+  outline:1px solid green; 
+ 
+  min-width: 760px;
+ 
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+
 /* Сетка - Шапка */
 .main-header {
   outline:1px solid black;
@@ -15,7 +73,7 @@
 .site-logo {
   outline:1px solid red;
   
-  width: 160px;
+  min-width: 160px;
   height: 65px;
 }
 
@@ -23,18 +81,14 @@
   outline:1px solid red;
   
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
 
-.cart-link {
-  outline:1px solid red; 
-  
-  width: 120px; /*110*/
-}
+
 
 /* Сетка - Контент*/
 .features {
@@ -142,7 +196,19 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Шапка */
@@ -198,8 +264,19 @@ body {
   list-style: none;
 }
 
+.socialnetworks {
+  display: flex;
+}
+
 .socialnetworks a {
-  background-color: #e1e1e1;
+  
+  justify-content: center;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: #e1e1e1; 
 }
 
 .socialnetworks a:hover,
@@ -214,6 +291,12 @@ body {
 
 /* Кнопки */
 .button {
+  display: inline-block;
+  padding: 16px 40px; 
+  margin-right: 12px; /* Для кнопок соц. сетей */
+  min-width: 80px;
+  
+  text-decoration: none;
   background-color: #fb565a;
   border: none;
   color: #ffffff;
