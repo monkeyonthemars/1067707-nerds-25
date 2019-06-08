@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> 
   </head>
-  <body>
+  <body class="container">
 
     <header class="main-header">
       <nav class="navigation">
@@ -20,7 +20,9 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a class="cart-link" href="#">Корзина</a>
+        <div class="cartbox">
+          <a class="cart-link" href="#">Корзина</a>
+        </div>
       </nav>
     </header>    
 
@@ -28,42 +30,42 @@
 
     <main>
 
-      <div>
-        <div>
+      <div class="main-slider">
+        <div class="slide">
           <b>
             Долго, дорого,
             <br>
             скрупулезно.
           </b>
           <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-          <a href="">Узнать больше</a>
+          <a class="button" href="">Узнать больше</a>
         </div>
-        <div>  
+        <!-- <div class="slide">  
           <b>
             Любим математику
             <br>
             как никто другой
           </b>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a href="">Узнать больше</a>
+          <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+          <a class="button" href="">Узнать больше</a>
         </div>
-        <div>
+        <div class="slide">
           <b>
             Только ночь,
             <br>
             только хардкор.
           </b>
           <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-          <a href="">Узнать больше</a>
-        </div>
+          <a class="button" href="">Узнать больше</a>
+        </div> -->
         
-        <div>
+        <!-- <div>
           <p>
             <a href="">Слайд 1</a>
             <a href="">Слайд 2</a>
             <a href="">Слайд 3</a>
           </p>
-        </div>
+        </div> -->
       </div>
 
       <section class="features">
@@ -85,7 +87,7 @@
               <a class="button button-green" href="#">Заказать</a>
             </section>
           </li>
-          <li>
+          <!-- <li>
             <section>
               <img src="img/service-press.jpg" alt="Презентации" width="300" height="146">
               <h3>Презентации</h3>
@@ -93,60 +95,88 @@
               <a class="button button-yellow" href="#">Заказать</a>
             </section>
           </li>
+          <li>
+            <section>
+              <img src="img/service-press.jpg" alt="Презентации" width="300" height="146">
+              <h3>Презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a class="button button-yellow" href="#">Заказать</a>
+            </section>
+          </li> -->
+          <li>
+              <section>
+                <img src="img/service-press.jpg" alt="Презентации" width="300" height="146">
+                <h3>Презентации</h3>
+                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                <a class="button button-yellow" href="#">Заказать</a>
+              </section>
+            </li>
         </ul>
       </section>
 
-      <section>
-        <h2 class="visually-hidden">Почему мы</h2>
-        <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <b>Выполняем заказы на разработку:</b>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
+      <div class="features-line"></div>
 
-      <section>
-        <h2 class="visually-hidden">Статистика</h2>
-        <p>С 2004 года любим точность во всем:</p>
-        <table>
-          <tbody><tr>
-            <td><b>146<sup>%</sup></b></td>
-            <td><b>100<sup>%</sup></b></td>
-            <td><b>50<sup>%</sup></b></td>
-          </tr>
-          <tr>
-            <td>Уровень самоотдачи</td> 
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
-          </tr>
-        </tbody></table>
-      </section>
+      <div class="about-us">
+        <section class="why-we">
+          <h2 class="visually-hidden">Почему мы</h2>
+          <b class="why-we-main-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p class="why-we-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <b class="why-we-listtitle">Выполняем заказы на разработку:</b>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+
+        <section class="statistics">
+          <h2 class="visually-hidden">Статистика</h2>
+          <p class="title-statistics">С 2004 года любим точность во всем:</p>
+          <table>
+            <tbody>
+              <tr class="table-title">
+                <td><b>146<sup>%</sup></b></td>
+                <td><b>100<sup>%</sup></b></td>
+                <td><b>50<sup>%</sup></b></td>
+              </tr>
+              <tr class="table-text">
+                <td>Уровень самоотдачи</td> 
+                <td>Соблюдение сроков</td>
+                <td>Минимальная предоплата</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+
+      <div class="about-us-line"></div>
         
       <section>
         <h2 class="visually-hidden">Партнеры</h2>
-        <ul>
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.png" alt="HTML Academy" width="199" height="68"></a></li>
-          <li><a href="#"><img src="img/logo-barbershop.png" alt="Barbershop BORODINSKI" width="209" height="90"></a></li>
-          <li><a href="#"><img src="img/logo-pink.png" alt="Pink" width="185" height="52"></a></li>
-          <li><a href="#"><img src="img/logo-mishka.png" alt="Mishka" width="173" height="84"></a></li>
+        <ul class="partners">
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.png" alt="HTML Academy" width="199" height="68"></a></li><div></div>
+          <li><a href="#"><img src="img/logo-barbershop.png" alt="Barbershop BORODINSKI" width="209" height="90"></a></li><div></div>
+          <li><a href="#"><img src="img/logo-pink.png" alt="Pink" width="185" height="52"></a></li><div></div>
+          <li><a href="#"><img src="img/logo-mishka.png" alt="Mishka" width="173" height="84"></a></li><div></div>
         </ul>  
       </section>
+
+      <div class="partners-line"></div>
 
     </main>
 
     <section>
       <h2 class="visually-hidden">Контакты</h2>
-      <!-- Здесь будет интерактивная карта  -->
-      <!-- Здесь будет метка студии на карте -->  
-      <div>
-        <b>Nёrds design studio</b>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="#">Напишите нам</a>
-      </div>
+      <div class="map">
+        <div class="map-marker"> 
+          <div class="contacts">
+            <b>Nёrds design studio</b>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a class="button" href="#">Напишите нам</a>
+          </div>
+        </div> 
+      </div> 
     </section>
 
     <footer class="footer">
@@ -161,7 +191,7 @@
         </section>
         <div class="footer-text">
           <h2 class="visually-hidden">Акции</h2>
-          <p><b>Давайте дружить, это выгодно!</b></p>
+          <p class="footer-title"><b>Давайте дружить, это выгодно!</b></p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
@@ -169,7 +199,6 @@
 
     <section class="write-us">
       <h2>Напишите нам</h2>
-      <button type="button">Закрыть</button>
       <form class="write-us-form"action="#">
         <p class="string">
           <label for="name">Ваше имя:</label>
@@ -185,6 +214,7 @@
         </p>
         <button class="button">Отправить</button>
       </form>
+      <button type="button">Закрыть</button>
     </section>
 
   </body>
