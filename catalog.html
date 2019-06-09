@@ -17,7 +17,7 @@
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a class="navigation-link-current" href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <div class="cartbox">
@@ -28,21 +28,30 @@
     
     <h1 class="page-title">Магазин готовых шаблонов</h1>
 
-    <main class="container">
+    <main class="main-catalog">
       <h2 class="visually-hidden">Фильтры каталога</h2>
-      <form action="#">
+      <form class="form-filter" action="#">
         <fieldset>
-          <legend>Стоимость:</legend>
-          <p><label>От <input type="number" name="from" value="0"></label></p>
-          <p><label>До <input type="number" name="till" value="15000"></label></p>
+          <legend class="legend-price">Стоимость:</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="input-price-box">
+            <p><label class="label-price">От <input type="text" name="from" value="0"></label></p>
+            <p><label class="label-price">До <input type="text" name="till" value="15 000"></label></p>
+          </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="grid">
           <legend>Сетка:</legend>
           <p><label><input type="radio" name="grid" value="adaptive">Адаптивная</label></p>
           <p><label><input type="radio" name="grid" value="fixed">Фиксированная</label></p>
           <p><label><input type="radio" name="grid" value="rubber">Резиновая</label></p>
         </fieldset>
-        <fieldset>
+        <fieldset class="other">
           <legend>Особенности:</legend>
           <p><label><input type="checkbox" name="slider" checked>Слайдер</label></p>
           <p><label><input type="checkbox" name="advantages">Блок преимуществ</label></p>
@@ -57,18 +66,18 @@
         <div class="sort">
           <p>Сортировать:</p>
           <ul>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По названию</a></li>
-            <li><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию"></a></li>
-            <li><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию"></a></li>
+            <li class="sortprice"><a href="#">По цене</a></li>
+            <li class="sorttype"><a href="#">По типу</a></li>
+            <li class="sortname"><a href="#">По названию</a></li>
+            <li class="updown"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию"></a></li>
+            <li class="updown"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию"></a></li>
           </ul>
         </div>
         <ul class="catalog-list">
           <li>
             <article class="catalog-item">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-              <div>
+              <div class="catalog-item-description">
                 <h3>Sedona</h3>
                 <p>Информационный сайт для туристов</p>
                 <a class="button catalog-button" href="#">9900 Руб.</a>
@@ -78,7 +87,7 @@
           <li>
             <article class="catalog-item">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
-              <div>
+              <div class="catalog-item-description">
                 <h3>Pink</h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
                 <a class="button catalog-button" href="#">9900 Руб.</a>
@@ -88,7 +97,7 @@
           <li>
             <article class="catalog-item">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
-              <div>
+              <div class="catalog-item-description">
                 <h3>Barbershop</h3>
                 <p>Сайт барбершопа</p>
                 <a class="button catalog-button" href="#">9900 Руб.</a>
@@ -98,7 +107,7 @@
           <li>
             <article class="catalog-item">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-              <div>
+              <div class="catalog-item-description">
                 <h3>Mishka</h3>
                 <p>Сайт товаров для дома</p>
                 <a class="button catalog-button" href="#">9900 Руб.</a>
@@ -108,7 +117,7 @@
           <li>
             <article class="catalog-item">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="А+">
-              <div>
+              <div class="catalog-item-description">
                 <h3>А+</h3>
                 <p>Сайт дистанционного обучения</p>
                 <a class="button catalog-button" href="#">9900 Руб.</a>
@@ -116,9 +125,10 @@
             </article>                    
           </li>
           <li>
+              
             <article class="catalog-item">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-              <div>
+              <div class="catalog-item-description">
                 <h3>Кваст</h3>
                 <p>Сайт производителя крафтового кваса</p>
                 <a class="button catalog-button" href="#">9900 Руб.</a>
@@ -128,63 +138,86 @@
         </ul>
         <ul class="pagination">
           <li><a class="pagination-button-current" href="#">1</a></li>
-          <li><a class="button pagination-button" href="#">2</a></li>
-          <li><a class="button pagination-button" href="#">3</a></li>
-          <li><a class="button pagination-button" href="#">Следующая</a></li>
+          <li><a class="pagination-button" href="#">2</a></li>
+          <li><a class="pagination-button" href="#">3</a></li>
+          <li><a class="pagination-button button-next" href="#">Следующая</a></li>
         </ul>
       </section>
       
     </main>
 
     <section>
-      <h2 class="visually-hidden">Контакты</h2>
-      <div>
-        <!-- Здесь будет интерактивная карта  -->
-        <!-- Здесь будет метка студии на карте -->
-        <b>Nёrds design studio</b>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="#">Напишите нам</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-container">
-        <section>
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="socialnetworks">
-            <li><a href="https://vk.com"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15"></a></li>
-            <li><a href="https://facebook.com"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22"></a></li>
-            <li><a href="https://instagram.com"><img src="img/insta-icon.svg" alt="Инстаграм" width="21" height="21"></a></li> 
-          </ul>
-        </section>
-        <div class="footer-text">
-          <h2 class="visually-hidden">Акции</h2>
-          <p><b>Давайте дружить, это выгодно!</b></p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="map">
+          <div class="map-marker"> 
+            <div class="contacts">
+              <b>Nёrds design studio</b>
+              <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p>тел. +7 (812) 275-75-75</p>
+              <a class="button" href="#">Напишите нам</a>
+            </div>
+          </div> 
+        </div> 
+      </section>
+  
+      <footer class="footer">
+        <div class="footer-container">
+          <section>
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="socialnetworks">
+              <li>
+                <a href="https://vk.com">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
+                    <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://facebook.com">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                    <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com">
+                  <span class="visually-hidden">Инстаграм</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                    <path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+                  </svg>
+                </a>
+              </li> 
+            </ul>
+          </section>
+          <div class="footer-text">
+            <h2 class="visually-hidden">Акции</h2>
+            <p class="footer-title"><b>Давайте дружить, это выгодно!</b></p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </div>
-      </div>
-    </footer>
-
-    <section class="write-us">
-      <h2>Напишите нам</h2>
-      <button type="button">Закрыть</button>
-      <form class="write-us-form"action="#">
-        <p class="string">
-          <label for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p  class="string">
-          <label for="email">Ваш e-mail:</label>
-          <input id="email" type="text" name="email" placeholder="email@example.com">
-        </p>  
-        <p  class="textbox">
-          <label for="text">Текст письма:</label>
-          <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button">Отправить</button>
-      </form>
-    </section>
-
-  </body>
-</html>
+      </footer>
+  
+      <section class="write-us">
+        <h2>Напишите нам</h2>
+        <form class="write-us-form"action="#">
+          <p class="string">
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p  class="string">
+            <label for="email">Ваш e-mail:</label>
+            <input id="email" type="text" name="email" placeholder="email@example.com">
+          </p>  
+          <p  class="textbox">
+            <label for="text">Текст письма:</label>
+            <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button">Отправить</button>
+        </form>
+        <button type="button">Закрыть</button>
+      </section>
+  
+    </body>
+  </html>
