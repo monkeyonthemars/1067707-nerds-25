@@ -9,10 +9,10 @@
   margin-right: auto;
 }
 
-/* .main-navigation-wrapper {
+.main-navigation-wrapper {
   width: 100%;
   background-color: black;
-} */
+}
 
 /* img {
   max-width: 100%;
@@ -858,7 +858,8 @@ body {
 }
 
 .grid p {
-  padding-left: 23px;
+  background-color: #fcc;
+  padding-left: 36px;
   margin-bottom: -6px;
 }
 
@@ -866,19 +867,102 @@ body {
   margin-bottom: 37px;
 }
 
+.radio-button,
+.radio-button-checked,
+.checkbox,
+.checkbox-enabled {
+  position: relative;
+}
+
+.radio-button::before {
+  content: "";
+  
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  
+  top: 3px;
+  left: 1px;
+  
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;  
+  
+  opacity: 0.5;
+}
+
+.radio-button-checked::before {
+  content: "";
+  
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  
+  top: 3px;
+  left: 1px;
+  
+  background-image: url("../img/radio-on.svg");  
+  background-repeat: no-repeat;
+  background-position: 0 0;  
+  
+  opacity: 0.5;
+}
+
+.checkbox::before {
+  content: "";
+  
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  
+  top: 3px;
+  left: 1px;
+  
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;  
+  
+  opacity: 0.5;
+}
+
+.checkbox-enabled::before {
+  content: "";
+  
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  
+  top: 3px;
+  left: 1px;
+  
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;  
+  
+  opacity: 0.5;
+}
+
+.radio-button:hover::before,
+.radio-button-checked:hover::before,
+.checkbox:hover::before,
+.checkbox-enabled:hover::before {
+  opacity: 1.0; 
+}
+
+
 .other legend{
-  margin-bottom: -12px;
+  margin-bottom: -11px;
 }
 
 .other p {
- padding-left: 23px;
+  background-color: #fcc;
+  padding-left: 36px;
   margin-bottom: -6px;
 }
 
 .other {
   margin-bottom: 41px;
 }
-
 
 
 .page-title {  
@@ -909,6 +993,7 @@ body {
   margin-top: 0;
   margin-bottom: 34px;
   padding-left: 0;
+/*   padding-bottom: -4px; */
 }
 
 .catalog-list li {  
@@ -919,8 +1004,8 @@ body {
   padding-left: 0;
   margin-right: 40px;
   margin-left: 0;
-  padding-top: 40px;
-  margin-bottom: 24px;
+/*   padding-top: 40px; */
+  margin-bottom: 33px;
 }
 
 .catalog-list li:hover::before,
@@ -933,12 +1018,55 @@ body {
 } 
 
 .catalog-item-description {
-  display: none;
+/*   display: none; */
+  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 28px 79px 43px; /* Отступы по макету */
+  width: 100%;
+  background-color: #e9e9e9;
+  text-align: center;
+  box-sizing: border-box; /* Чтобы padding входил в размеры */
+  visibility: hidden; /* Скрываем блок по умолчанию */
+  opacity: 0; /* Делаем его прозрачным, чтобы анимировать */
+  transition: opacity 0.25s, visibility 0.25s; /* Анимируем прозрачность и видимость */
+}
+
+.catalog-item:hover {
+  background-color: #4d4d4d;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25); /* Настройки тени берём из эффектов слоя */
+}
+
+.catalog-item {
+  background-color: red;
+  
+  overflow: hidden; /* Скрываем всё торчащее за пределы блока, чтобы анимировать .catalog-item-info */
+  position: relative; /* Задаем систему отсчёта для абсолютно споцизионированного .catalog-item-info */
+  padding-top: 40px;
+  width: 360px;
+  border: 1px solid #e9e9e9;
+  border-radius: 3px 3px 0 0; /* Скругляем только верхние правый и левый углы*/
+  box-sizing: border-box; /* Чтобы border входил в размеры */
+  background-color: #e9e9e9; /* Цвет "плашки браузера" */
+  transition: background-color 0.25s, box-shadow 0.25s; /* Анимируем смену цвета фона и появление тени */
+}
+
+.catalog-item-img {
+  vertical-align: middle; /* Чтобы под фотографией не было "дырки" */
+}
+
+.catalog-item:hover .catalog-item-description {
+  /* При наведении мыши свойства перезапишутся и сработает анимация (обратное сработает по отведению) */
+  visibility: visible;
+  opacity: 1;
 }
 
 
 
-.catalog-list li::before {
+
+
+.catalog-item::before {
   content: "";
   
   position: absolute;
