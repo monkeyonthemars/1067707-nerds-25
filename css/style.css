@@ -857,24 +857,20 @@ body {
   margin-bottom: -11px;
 }
 
-.grid p {
-  background-color: #fcc;
-  padding-left: 36px;
+.grid .radio {
   margin-bottom: -6px;
+  padding-left: 36px;
 }
 
 .grid {
   margin-bottom: 37px;
 }
 
-.radio-button,
-.radio-button-checked,
-.checkbox,
-.checkbox-enabled {
+.radio {
   position: relative;
 }
 
-.radio-button::before {
+.radio label::before {
   content: "";
   
   position: absolute;
@@ -891,7 +887,7 @@ body {
   opacity: 0.5;
 }
 
-.radio-button-checked::before {
+.radio input:checked + label::before {
   content: "";
   
   position: absolute;
@@ -901,7 +897,7 @@ body {
   top: 3px;
   left: 1px;
   
-  background-image: url("../img/radio-on.svg");  
+  background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;  
   
