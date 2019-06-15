@@ -12,6 +12,8 @@
   padding-top: 49px;
 }
 
+
+
 .modal-close {
   
   background-color: #ffffff;
@@ -662,9 +664,7 @@
 }
 
 .googlemap {
-/*   display: none; */
-    
-  
+   
 }
 
 .contacts {
@@ -1075,7 +1075,7 @@ body {
 
 
 .grid legend{
-  margin-bottom: -11px;
+  margin-bottom: 5px;
 }
 
 .grid {
@@ -1084,7 +1084,7 @@ body {
 
 .radio {
   position: relative;
-  margin-bottom: -6px;
+  margin-bottom: 10px;
   padding-left: 36px;
 }
 
