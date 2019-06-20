@@ -5,10 +5,9 @@
     <title>Дизайн-студия «Нёрдс»</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> 
+    <link href="css/style.min.css" rel="stylesheet"> 
   </head>
   <body>
-
     <header class="main-header">
       <div class="container">
         <nav class="navigation">
@@ -27,16 +26,13 @@
         </nav>
       </div>
     </header>      
-
     <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
-
     <main>
-
       <div class="main-slider">
         <div class="container">
-          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
           <div class="slider-controls">
             <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
             <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
@@ -69,8 +65,6 @@
           </div>
         </div>
       </div>
-
-      
       <div class="container">
         <section class="features">
           <h2 class="visually-hidden">Услуги</h2>
@@ -91,22 +85,6 @@
                 <a class="button button-green" href="#">Заказать</a>
               </section>
             </li>
-            <!-- <li>
-              <section>
-                <img src="img/service-press.jpg" alt="Презентации" width="300" height="146">
-                <h3>Презентации</h3>
-                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                <a class="button button-yellow" href="#">Заказать</a>
-              </section>
-            </li>
-            <li>
-              <section>
-                <img src="img/service-press.jpg" alt="Презентации" width="300" height="146">
-                <h3>Презентации</h3>
-                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                <a class="button button-yellow" href="#">Заказать</a>
-              </section>
-            </li> -->
             <li>
                 <section>
                   <img src="img/service-press.jpg" alt="Презентации" width="300" height="146">
@@ -117,9 +95,7 @@
               </li>
           </ul>
         </section>
-
         <div class="features-line"></div>
-
         <div class="about-us">
           <section class="why-we">
             <h2 class="visually-hidden">Почему мы</h2>
@@ -132,7 +108,6 @@
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </section>
-
           <section class="statistics">
             <h2 class="visually-hidden">Статистика</h2>
             <p class="title-statistics">С 2004 года любим точность во всем:</p>
@@ -152,9 +127,7 @@
             </table>
           </section>
         </div>
-
         <div class="about-us-line"></div>
-          
         <section>
           <h2 class="visually-hidden">Партнеры</h2>
           <ul class="partners">
@@ -164,34 +137,22 @@
             <li class="partner-mishka"><a href="#"><img src="img/logo-mishka.png" alt="Mishka" width="173" height="84"></a></li>
           </ul>  
         </section>
-
         <div class="partners-line"></div>
-
         </div>
-
-      </main>
-
+    </main>
+    <section class="container-contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="map"></div>
       <div class="container">
-
-      <section>
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="map">
-          <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533273!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560431105252!5m2!1sru!2sru" width="1180" height="415" style="border:0" allowfullscreen></iframe>
-          <div class="container">
-            <div class="map-marker"> 
-            </div>
-            <div class="contacts">
-              <b>Nёrds design studio</b>
-              <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              <p class="phone">тел. +7 (812) 275-75-75</p>
-              <a class="button-contacts" href="#">Напишите нам</a>
-            </div>
-          </div>
-        </div> 
-      </section>
-
-      
-
+        <div class="contacts">
+          <b>Nёrds design studio</b>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="phone">тел. +7 (812) 275-75-75</p>
+          <a class="button-contacts" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+    <div class="container">
       <footer class="footer">
         <div class="footer-container">
           <section>
@@ -230,14 +191,11 @@
           </div>
         </div>
       </footer>
-
     </div>
-
-
     <section class="write-us modal">
       <div class=container>
         <h2>Напишите нам</h2>
-        <form class="write-us-form" action="#">
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="string">
             <label for="name">Ваше имя:</label>
             <input class="name" id="name" type="text" name="name" placeholder="Имя Фамилия">
@@ -255,8 +213,7 @@
         <button class="modal-close" type="button">Закрыть</button>
       </div>
     </section>
-
-    <script src="js/script.js"></script>
-    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9064a445-2bba-492d-8ff1-e8196a12abba&lang=ru_RU"></script>
+    <script src="js/script.min.js"></script>    
   </body>
 </html>
