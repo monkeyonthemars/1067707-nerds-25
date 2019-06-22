@@ -213,6 +213,15 @@
   padding-left: 0;
 }
 
+.sort-list {
+  position: relative;
+}
+
+.sorttypes {
+  display: flex;
+  flex-wrap: wrap;  
+}
+  
 .site-navigation li:not(:last-child) {
   margin-right: 46px;
 }
@@ -309,6 +318,7 @@
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .slider-controls label::after {
@@ -471,7 +481,8 @@
   text-transform: uppercase;
   margin-top: 244px;
   margin-bottom: 38px;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .about-us tr {
@@ -578,11 +589,14 @@
 }
 
 .map {
-  min-height: 415px;
+  min-height: 416px;
   position: relative;
   line-height: 0;
   margin-bottom: 58px; 
   width: 100%;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .contacts {
@@ -593,7 +607,7 @@
   padding: 49px 50px 50px 50px;
   background-color: #ffffff;
   position: absolute;
-  top: 53px;
+  top: 54px;
 }
 
 .contacts b {
@@ -719,7 +733,8 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -793,8 +808,8 @@ body {
   background-color: #e74246;
 }
 
-.socialnetworks a:hover path,
-.socialnetworks a:focus path {
+.socialnetworks-link:hover path,
+.socialnetworks-link:focus path {
   fill: #e37376;
 }
 
@@ -985,19 +1000,6 @@ body {
   opacity: 0.4;
 }
 
-.radio input:hover + label::before,
-.radio input:focus + label::before,
-.checkbox input:hover + label::before,
-.checkbox input:focus + label::before {
-  opacity: 1.0;  
-} 
-
-.radio input:disabled + label::before,
-.checkbox input:disabled + label::before {
-  opacity: 0.3;  
-} 
-
-
 .radio input:checked + label::before {
   content: "";
   position: absolute;
@@ -1040,6 +1042,18 @@ body {
   background-position: 0 0;  
   opacity: 0.4;
 }
+
+.radio input:hover + label::before,
+.radio input:focus + label::before,
+.checkbox input:hover + label::before,
+.checkbox input:focus + label::before {
+  opacity: 1.0;  
+} 
+
+.radio input:disabled + label::before,
+.checkbox input:disabled + label::before {
+  opacity: 0.3;  
+} 
 
 .other legend{
   margin-bottom: -11px;
@@ -1141,6 +1155,11 @@ body {
   opacity: 0.15;
 }
 
+.catalog-item:hover::before,
+.catalog-item:focus::before {
+  opacity: 1;
+}
+
 .sort p {
   font-size: 18px;
   font-weight: 700;
@@ -1168,6 +1187,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 39px;
+  padding-right: 22px;
 }
 
 .sort ul { 
@@ -1212,8 +1232,36 @@ body {
   margin-right: 19px;
 }
 
+.down::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 10px; 
+  bottom: 21px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.up::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 10px; 
+  bottom: 21px;
+  right: -21px;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ }
+
 .up {
   opacity: 0.35;
+}
+
+.down span,
+.up span {
+  display: none;
 }
 
 .catalog-list li {
