@@ -1086,6 +1086,7 @@ body {
   margin-top: 0;
   margin-bottom: 36px;
   padding-left: 0;
+  max-width: 760px;
 }
 
 .catalog-list li {  
