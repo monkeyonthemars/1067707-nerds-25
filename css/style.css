@@ -438,6 +438,10 @@
   min-width: 360px;
 }
 
+.why-we {
+  width: 1312px;
+}
+
 .why-we-main-title {
   font-size: 45px;
   font-weight: 500;
@@ -502,11 +506,11 @@
 }
 
 .table-title td {
-  margin-right: 19px;
+  width: 117px;
 }
 
 .table-text td {
-  margin-right: 24px;
+  width: 117px;
 }
 
 .about-us sup {
@@ -1281,11 +1285,6 @@ body {
 .down:focus::after {
   opacity: 0.6;
 }
-
-/* .up:active::before,
-.down:active::before {
-  opacity: 1;
-} */
 
 .up {
   opacity: 0.3;
